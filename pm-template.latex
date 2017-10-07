@@ -21,6 +21,7 @@ $if(euro)$
   \usepackage{eurosym}
 $endif$
 \else % if luatex or xelatex
+  \usepackage{titlesec}
   \usepackage{fontspec} 	% 允許設定字體
   \usepackage{xeCJK} 		% 分開設置中英文字型
   \setCJKmainfont{SimSun} 	% 設定中文字型
@@ -37,6 +38,8 @@ $endif$
   \fi
   \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
   \newcommand{\euro}{€}
+  \titleformat{\chapter}{\Huge\bfseries}{第\,\thechapter\,章}{1em}{}
+  \titleformat{\section}{\Huge\bfseries}{第\,\thechapter\,章}{1em}{}
 $if(mainfont)$
     \setmainfont{$mainfont$}
 $endif$
