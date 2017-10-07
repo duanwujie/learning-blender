@@ -39,7 +39,8 @@ $(BUILD)/html/$(BOOKNAME).html: $(CHAPTERS)
 $(BUILD)/pdf/$(BOOKNAME).pdf: $(TITLE) $(CHAPTERS) $(REFLIST)
 	mkdir -p $(BUILD)/pdf
 	#pandoc $(TOC) --latex-engine=xelatex --template eisvogel.tex -o $@ $^
-	pandoc -N -s --toc --smart --latex-engine=xelatex -V CJKmainfont=$(MAINFONT) -V mainfont=$(MAINFONT) -V geometry:margin=1in -o $@ $^
+	#pandoc -N -s --toc --smart --latex-engine=xelatex -V CJKmainfont=$(MAINFONT) -V mainfont=$(MAINFONT) -V geometry:margin=1in -o $@ $^
+	pandoc  --toc --smart --template=pm-template --latex-engine=xelatex -V mainfont=$(MAINFONT) -o $@ $^
 
 .PHONY: all book clean epub html pdf
 
