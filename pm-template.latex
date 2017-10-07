@@ -34,6 +34,7 @@ $endif$
   \XeTeXlinebreaklocale "zh" 	% 針對中文自動換行
   \XeTeXlinebreakskip = 0pt plus 1pt % 字與字之間加入0pt至1pt的間距，確保左右對整齊
   \setlength{\parskip}{1.5em} 	% 段落之間的距離
+  \renewcommand{\contentsname}{目录} %将目录名字修改成目录
   \ifxetex
     \usepackage{xltxtra,xunicode}
   \fi
@@ -130,13 +131,13 @@ $endif$
 %\setlength{\parskip}{6pt plus 2pt minus 1pt}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 
-\title{\huge 在OSX平台上的XeLaTeX中文測試} % 設置標題，使用巨大字體
 \usepackage{titling}
 \setlength{\droptitle}{-8em} 	% 將標題移動至頁面的上面
 
-\usepackage{fancyhdr}
+%页眉设置 
+%\usepackage{fancyhdr}
 \usepackage{lastpage}
-\pagestyle{fancyplain}
+%\pagestyle{fancyplain}
 
 $if(numbersections)$
 \setcounter{secnumdepth}{5}
