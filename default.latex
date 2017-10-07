@@ -3,6 +3,8 @@ $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
 \usepackage{lmodern}
+
+
 $endif$
 $if(linestretch)$
 \usepackage{setspace}
@@ -153,6 +155,9 @@ $endif$
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
 $if(numbersections)$
 \setcounter{secnumdepth}{$if(secnumdepth)$$secnumdepth$$else$5$endif$}
 $else$
@@ -194,10 +199,12 @@ $endfor$
 $if(title)$
 \title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
 $endif$
+
 $if(subtitle)$
 \providecommand{\subtitle}[1]{}
 \subtitle{$subtitle$}
 $endif$
+
 $if(author)$
 \author{$for(author)$$author$$sep$ \and $endfor$}
 $endif$
