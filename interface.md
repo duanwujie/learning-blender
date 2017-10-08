@@ -7,7 +7,7 @@
 
 	![Blender启动画面](images/interface_splash_current.png)
 ## Window System
-	[comment]: <-------------------------------Introduction begin--------------------------------------------------> 
+	
 ### 介绍
 	
 
@@ -77,7 +77,7 @@
 			通过选择 文件->用户首选项->并单击主题选项卡来完成。
 
 			`File->User Preference->Theme`
-			[comment]: <-------------------------------Introduction end--------------------------------------------------> 
+		
 	
 ### 屏幕(Screens)
 	
