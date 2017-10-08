@@ -21,7 +21,7 @@ CHAPTERS=1.md interface.md \
 			glossary.md \
 			
 
-TOC = --toc --toc-depth=3
+TOC = --toc --toc-depth=4
 COVER_IMAGE = images/cover.jpg
 LATEX_CLASS = book
 #MAINFONT = "AR PL UMing CN"
