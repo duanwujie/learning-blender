@@ -45,7 +45,8 @@ $endif$
   \titleformat{\chapter}{\Huge\bfseries}{第\,\thechapter\,章}{1em}{}
   \titleformat{\section}{\center\huge\bfseries}{}{1em}{} %设置section格式 
   \titleformat{\subsection}{\Large\bfseries}{}{1em}{} %设置subsection格式
-  \titleformat{\subsubsection}{\color{red}\bfseries}{}{1em}{} %设置subsubsection格式
+  \titleformat{\subsubsection}{\large\bfseries}{}{1em}{} %设置subsubsection格式
+  \titleformat{\subsubsubsection}{\color{red}\bfseries}{}{1em}{} %设置subsubsection格式
 $if(mainfont)$
     \setmainfont{$mainfont$}
 $endif$
