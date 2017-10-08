@@ -8,7 +8,7 @@
 	![Blender启动画面](images/interface_splash_current.png)
 ## Window System
 	[comment]: <-------------------------------Introduction begin--------------------------------------------------> 
-	### 介绍
+    ### 介绍
 	
 
 
