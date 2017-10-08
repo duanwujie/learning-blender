@@ -45,6 +45,7 @@ Window -> Screen ->  Areas ->  Editors ->  Regions ->  (Tabs) ->  Panels ->  Con
 
 一般来说，编辑器提供了查看和修改Blender作品的特定部分的方法。 编辑分为区域(Regions)。 
 区域可以具有更小的构造元素，如标签和面板，其中包含按钮，控件和小部件。
+
 ![The 3D View editor.](images/interface_introduction_editor.png)
 
 
@@ -219,11 +220,233 @@ To exit the fullscreen move the mouse to the top right corner of the area to rev
 			
 			
 ### Regions
+
+An Editor is subdivided into regions.
+
+#### Main Region
+At least one region is always visible. It is called the main region and is the most prominent part of the editor.
+
+Each editor has a specific purpose, so the main region and the availability of additional regions are different between editors. See specific documentation about each editor in the Editors chapter.
+
+#### Header
+
+A header is a small horizontal strip with a lighter gray background, which sits either at the top or bottom of the area. All editors have a header acting as a container for menus and commonly used tools. Menus and buttons will change with the editor type and the selected object and mode.
+
+![The Header of the 3D View edito](images/modeling_meshes_introduction_3d-view-header-object-mode.png)
+
+
+If you move the mouse over an area, the header of its editor changes to a slightly lighter shade of gray. This means that it is “focused”. All hotkeys you press will now affect the contents of this editor. The header can be hidden with Alt-F9.
+
+#### Tool Shelf
+
+The Tool Shelf by default on the left side contains the tool settings. T toggles the visibility of Tool Shelf Region.
+
+#### Operator Panel
+
+The Operator panel is a region that is part of the Tool Shelf containing only one panel. In the 3D View it displays the properties of the last operator executed and in the File Browser the file import/export options.
+
+#### Properties Region
+
+The Properties Region is by default on the right side. It contains Panels with settings of objects within the editor and the editor itself. N toggles the visibility of Properties Region.
+
+#### Arranging
+
+#### Scrolling
+
+A region can be scrolled vertically and/or horizontally by dragging it with the MMB. If the region has no zoom level, it can be scrolled by using the Wheel, while the mouse hovers over it.
+
+#### Changing the Size and Hiding
+
+Resizing regions works the same way as Areas by dragging their border.
+
+To hide a region scale it down to nothing. A hidden region leaves a little plus sign (see picture). By LMB on this, the region will reappear.
+
+The Tool Shelf and Properties region have a shortcut assigned to toggle between hide and show.
+
+![Hiding and showing the Header.](images/interface-window_system-headers-hide.png)
+![Hiding and showing the Header.](images/interface-window_system-headers-show_02.png)
+
+#### Position
+
+
+
+To flip a region from one side to the opposite press F5, while the Region is under the mouse pointer.
+
+The header can also be flip by RMB on it and select the appropriate item from the pop-up menu. If the header is at the top, the item text will read “Flip to Bottom”, and if the header is at the bottom the item text will read “Flip to Top”.
+
 ### Tabs & Panels
+
+#### Tabs
+
+Tabs are overlapping sections in the user-interface. The Tabs header can be vertical (Tool Shelf) or horizontal (Properties Editor, User Preferences).
+
+Vertical tabs can be switched with the Wheel within the tab header and Ctrl-Wheel changes tabs from anywhere in the region.
+
+![Horizontal tab header](images/game-engine_physics_introduction_tab-header.png)
+![Tool Shelf panels.](images/interface_tabs.png)
+
+
+
+#### Panels
+
+The smallest organizational unit in the user interface is a panel. Panels can be collapsed to hide its contents. They are used in the Properties Editor, but also for example in the Tool Shelf and the Properties region.
+
+In the image on the right there are three panels: Transform, Edit and History. The Edit panel is expanded and the other two panels are collapsed.
+
+![Orange: Panel Headers.](images/interface_panels.png)
+
+#### Collapsing and expanding
+
+A triangle on the left of the title shows the expanded (▼) and collapsed (►) state of the panel.
+
+* A click with the LMB on the panel header expands or collapses it.
+* Pressing A expand/collapses the panel under the mouse pointer.
+* A Ctrl-LMB click on the header of a specific panel will collapse all other panels and make this the only expanded one.
+* Dragging with LMB over the headers will expand or collapse many at once.
+
+#### Position
+
+You can change the position of a panel within its region by clicking and dragging it with the LMB on the grip widget (::::) in the upper right corner.
+
+#### Pinning
+
+Often it is desirable to view panels from different tabs at the same time. This has been solved by making panels pinnable.
+
+A pinned panel remains visible regardless of which tab has been selected. You can pin a panel by Shift clicking its header, or by RMB clicking on the header and choosing Pin in the context menu.
+
+In the image shown to the right, is an example of the Mesh Options pinned in the tools tab.
+
+#### Zoom
+
+The zoom factor of a whole region with panels can be changed by Ctrl-MMB clicking and moving the mouse anywhere within that region or use the NumpadPlus and NumpadMinus to zoom in and out the contents. Pressing Home (Show All) will reset the zooming at the screen/panel focused by the mouse pointer.
+
+#### Alignment
+
+The alignment of the panels in the Properties Editor can be changed between vertical and horizontal. To do this click with RMB somewhere within the main region of the Properties Editor and choose either Horizontal or Vertical from the appearing menu. Keep in mind though that the panels are optimized for vertical alignment.
+
+
+
 ## Interface Controls
 ## Buttons and Controls
 ### Buttons
+
+
+
+#### Operation button.
+
+These are buttons that perform an operation when clicked with LMB. They can be identified by their gray color in the default color scheme.
+
+![Operation Buttons](images/interface_button.png)
+
+#### Text Fields & Search Fields.
+
+
+
+Text fields have a light gray background and a darker outline. They hold text strings, and provide the means to edit it by standard text editing. Search fields show a magnifying glass icon on the left side. Start typing in the field to search. Only items with matching text will be shown.
+
+For text fields with an icon and gray pop-up, see Data ID.
+
+![Text and Search](images/interface_text_search.png)
+
+#### Color Buttons.
+
+Without and with alpha.
+The color button stores a color value shown in its background. LMB color buttons opens the Color Picker. Color buttons with an alpha channel are divided in half: On the left the color is shown without an alpha channel and on the right the color with an alpha channel drawn over a checker pattern. Colors can be dragged and dropped.
+
+![Color Buttons](images/interface_color_button.png)
+
+
+
+
 ### Menus
+
+Blender uses a variety of different menus for accessing options and tools.
+
+#### Header Menus
+
+#### Collapsing Menus
+
+#### Select Menus
+
+
+#### Pop-Up Menus
+
+Pop-up menus are overlays. They are spawned by menus showing up and down triangles on the right or after a key input at the mouse position.
+
+If the content is too large to fit on the screen, small indicator triangles appear. When moving the mouse over them scrolls the pop-up.
+
+For example, the Viewport Shading button will produce a pop-up menu with the available shading options.Pop-up menus are overlays. They are spawned by menus showing up and down triangles on the right or after a key input at the mouse position.
+
+If the content is too large to fit on the screen, small indicator triangles appear. When moving the mouse over them scrolls the pop-up.
+
+For example, the Viewport Shading button will produce a pop-up menu with the available shading options.
+
+![The Viewport Shading pop-up menu](images/interface_popup-menu.jpg)
+
+* Mouse selection: LMB on the desired item.
+* Numerical selection: You can use the number keys or Numpad to input an item in the list to select. For example, Numpad-1 will select the first item and so on.
+
+Pop-ups can be moved by dragging their title.
+
+#### Shortcuts
+
+* Use Wheel while hovering with the mouse.
+* Arrow keys can be used to navigate.
+* Each menu item has an underlined character which can be pressed to activate it.
+* Number keys or numpad can be used to access menu items. (Where 1 is the first menu item, 2 the second… etc. For larger menus Alt-1 the 11th… up to Alt-0 the 20th)
+* Press Enter to activate the selected menu item.
+* Press Esc to cancel the menu, or move the mouse cursor far from the pop-up, or by LMB clicking anywhere out of it.
+
+#### Context Menu
+
+Context menus are pop-ups opened with the RMB. Only the common options are listed below:
+
+Single sets or gets the value of the button under the mouse pointer. All on the other hand includes all combined buttons.
+
+**Reset All/Single to Default Value(s)**
+
+* Replaces the current value by the default Backspace.
+
+**Unset**
+
+* ToDo
+
+**Copy Data Path**
+
+* For scripting – Copies the Python path of the property, relative to the data-block.
+
+**Copy To Selected**
+
+* Copies the property value to the selected object’s corresponding property. A use case is if the Properties editor context is pinned.
+
+**Add Shortcut**
+	
+* Lets you define a keyword or mouse shortcut and associates it with the control. To define the shortcut you must first move the mouse cursor over the button that pops up, and when “Press a key” appears you must press and/or click the desired shortcut.
+
+**Change Shortcut**
+
+* Lets you redefine the shortcut.
+
+**Remove Shortcut**
+
+* Unlinks the existing shortcut.
+
+**Online Manual**
+
+* See Context Sensitive Manual Access.
+
+**Online Python Reference**
+
+* Context-sensitive access to the Python API Reference.
+
+**Edit Source**
+
+* For UI development – Creates a text data-block with the source code associated with the control, in case the control is based on a Python script. In the Text Editor it points at the code line where the element is defined.
+
+**Edit Translation**
+
+* For UI development – Points at the translation code line.
+
 ### Toggle & Radio Buttons
 ### Number Buttons
 ### Eyedropper
