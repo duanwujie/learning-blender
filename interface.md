@@ -8,7 +8,7 @@
 	![Blender启动画面](images/interface_splash_current.png)
 ## Window System
 	[comment]: <-------------------------------Introduction begin--------------------------------------------------> 
-	### Introduction
+	### 介绍
 	
 
 
@@ -97,15 +97,15 @@
 
 			* 屏幕布局
 
-			可用的屏幕布局列表. 请看 [默认屏幕](#default_screens)
+				可用的屏幕布局列表. 请看 [默认屏幕](#default_screens)
 
 			* Add +
 
-			单击添加按钮，将根据您当前的布局创建一个新的布局。
+				单击添加按钮，将根据您当前的布局创建一个新的布局。
 
 			* Delete X
 
-			您可以使用删除按钮删除所选屏幕。
+				您可以使用删除按钮删除所选屏幕。
 			
 		#### 快捷键
 
@@ -144,6 +144,12 @@
 		It is divided up into a number of re-sizable areas. 
 		An area contains the workspace for a particular type of editor, like a 3D View Editor, or an Outliner.
 
+		#### Arranging
+
+			Blender uses a novel screen-splitting approach to arrange areas. 
+			The idea is that you split up that big application window into any number of smaller (but still rectangular) non-overlapping areas. That way, 
+			each area is always fully visible, and it is very easy to work in one area and hop over to work in another.
+			
 		#### Changing the Size
 
 			You can resize areas by dragging their borders with LMB. 
@@ -165,6 +171,75 @@
 
 			In order to join two areas LMB(鼠标左键) click and drag the area splitter outward. They must be the same dimension (width or height) 
 			in the direction you wish to join. This is so that the combined area space results in a rectangle.
+			
+			![The Properties Editor is being merged “over” the Outliner.](images/interface-window_system-arranging_areas-join_areas.png)
+			
+			The area that will be closed gets a dark overlaid with an arrow. Now you can select the area to be closed by moving the mouse over it.
+
+			Release the LMB to complete the join. If you press Esc or RMB before releasing the mouse, the operation will be aborted.
+			
+		#### Area Options
+
+			RMB on the border opens the Area Options.
+
+			* Split Area
+					Shows an indicator line that lets you select the area and position where to split. Tab switches between vertical/horizontal.
+			* Join Areas
+					Shows the join direction overlay.Confirm or cancel works as described above.
+
+		#### Swapping Contents
+			You can swap the contents between two areas with Ctrl-LMB on one of the splitters of the initial area, dragging towards the target area, and releasing the mouse there. 
+			The two areas do not need to be side by side, though they must be inside the same window.
+
+		#### Duplicate Area into new Window
+		
+			`
+			Reference
+
+				Menu: View->Duplicate Area into new Window
+			`
+				
+			The new window is a fully functional window, which is part of the same instance of Blender. This can be useful, e.g. if you have multiple monitors.
+
+			A new window can be created from View ‣ Duplicate Area into new Window.
+
+			You can also create a new window from an existing area by Shift-LMB on the area splitter widget, then drag slightly.
+
+			The window can be closed with the OS Close Window button.
+
+		#### Toggle Maximize Area
+			`
+			Reference
+
+			Menu: View ‣ Toggle Maximize Area
+			Hotkey: Ctrl-Up, Shift-Spacebar
+			`
+			The maximized area fill the whole application window. It contains the Info Editor and the select area.
+
+			You can maximize an area with the View ‣ Toggle Maximize Area menu entry. To return to normal size use again menu entry, 
+			or RMB on the editors header and select Maximize Area and Tiled Area to return. In the Info Editor header the Back to Previous button on 
+			the right of the menus also returns to tiled areas.
+
+			A quicker way to achieve this is to use the shortcuts: Shift-Spacebar, Ctrl-Down or Ctrl-Up to toggle between maximized and normal areas.
+
+			`
+			Note
+
+			The area your mouse is currently hovering over is the one that will be maximized using the keyboard shortcuts.
+			`
+			
+		#### Toggle Fullscreen Area
+			`
+			Reference
+			
+			Menu: View ‣ Toggle Fullscreen Area
+			Hotkey: Alt-F10
+			`
+			The fullscreen area contains only the main region. 
+			The headers visibility can still be toggled with the shortcut. 
+			To exit the fullscreen move the mouse to the top right corner of the area to reveal the return icon or use the shortcut Alt-F10.
+			
+			
 	### Regions
 	### Tabs & Panels
 ## Interface Controls
