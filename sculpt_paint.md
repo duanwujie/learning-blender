@@ -1,7 +1,7 @@
 
 # Painting & Sculpting
 
-## Introduction
+## 介绍
 ### Navigate
 
 ## Brush
@@ -16,11 +16,11 @@
 ### Curve
 
 ## Painting
-### Introduction
+### 介绍
 ### Paint Modes
 
 ## Sculpting
-### Introduction
+### 介绍
 ### Tools
 ### Options
 ### Adaptive Sculpting

@@ -1,6 +1,6 @@
 
 # Compositing
-## Introduction
+## 介绍
 ### Getting Started
 ### Examples
 ### Image Size

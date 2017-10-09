@@ -1,12 +1,12 @@
 
 # Render 
 
-## Introduction
+## 介绍
 ### Workflow
 ### Render Engines
 
 ## Blender Render Engine
-### Introduction
+### 介绍
 ### Materials
 ### Textures
 ### Lighting
@@ -18,7 +18,7 @@
 ### Optimizing Renders
 
 ## Cycles Render Engine
-### Introduction
+### 介绍
 ### Materials
 ### Lamps
 ### World
@@ -43,7 +43,7 @@
 ### Color Management
 
 ## Freestyle
-### Introduction
+### 介绍
 ### Core Options
 ### Viewmaps
 ### Parameter Editor
@@ -62,6 +62,6 @@
 ### Known Limitations
 
 ## Audio Rendering
-### Introduction
+### 介绍
 ### Speaker
 

@@ -1,10 +1,10 @@
 
 # Rigging
 
-## Introduction
+## 介绍
 
 ## Constraints
-### Introduction
+### 介绍
 ### Interface
 ### Motion Tracking
 ### Transform
@@ -12,7 +12,7 @@
 ### Relationship
 
 ## Armatures
-### Introduction
+### 介绍
 ### Bones
 ### Properties
 ### Structure

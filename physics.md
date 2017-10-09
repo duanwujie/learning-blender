@@ -1,7 +1,7 @@
 
 # Physics
 
-## Introduction
+## 介绍
 ### Quick Effects
 
 ## Gravity

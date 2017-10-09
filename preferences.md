@@ -3,7 +3,7 @@
 
 # User Preferences
 
-## Introduction
+## 介绍
 ### Open User Preferences
 ### Configure
 ### Save User Settings

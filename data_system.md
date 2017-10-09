@@ -1,7 +1,7 @@
 
 # Data System
 
-## Introduction
+## 介绍
 ### Outliner
 ### Pack and Unpack Data
 
@@ -16,7 +16,7 @@
 ### Editing Properties
 
 ## Scenes
-### Introduction
+### 介绍
 ### Scene Properties
 
 ## Files

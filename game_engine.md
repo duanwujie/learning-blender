@@ -2,7 +2,7 @@
 # Game Engine
 
 
-## Introduction
+## 介绍
 ### Use Cases and Sample Games
 
 ## Game Logic Screen Layout
@@ -22,7 +22,7 @@
 ### Mist
 
 ## Logic
-### Introduction
+### 介绍
 ### Sensors
 ### Controllers
 ### Actuators
@@ -30,12 +30,12 @@
 ### States
 
 ## Camera
-### Introduction
+### 介绍
 ### Stereo Camera
 ### Dome Camera
 
 ## Physics
-### Introduction
+### 介绍
 ### World Physics
 ### Converting
 ### Physics Types
@@ -43,7 +43,7 @@
 ## Performance Considerations
 
 ## Python API
-### Introduction
+### 介绍
 ### Bullet physics Python API
 ### The VideoTexture module: bge.texture
 
