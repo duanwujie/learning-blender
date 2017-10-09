@@ -136,9 +136,9 @@ $endif$
 \setlength{\droptitle}{-8em} 	% 將標題移動至頁面的上面
 
 %页眉设置 
-%\usepackage{fancyhdr}
+\usepackage{fancyhdr}
 \usepackage{lastpage}
-%\pagestyle{fancyplain}
+\pagestyle{fancyplain}
 
 $if(numbersections)$
 \setcounter{secnumdepth}{5}
