@@ -4,7 +4,7 @@ TITLE = title.txt
 METADATA = metadata.xml
 #CHAPTERS = 0.md 1.md 2.md 3.md 4.md 5.md 6.md 8.md 7.md 9.md 10.md 11.md 12.md 13.md 14.md 15.md 16.md 17.md 18.md 19.md 20.md 21.md 22.md 23.md 24.md 25.md 26.md 27.md 28.md 29.md 30.md 31.md 32.md 33.md 34.md 35.md 36.md 37.md 38.md 39.md
 
-CHAPTERS=1.md interface.md \
+CHAPTERS=interface.md \
 			editors.md \
 			data_system.md \
 			modeling.md \
@@ -17,8 +17,9 @@ CHAPTERS=1.md interface.md \
 			game_engine.md \
 			preferences.md \
 			advanced.md \
-			troubleshooting.md \
-			glossary.md \
+			troubleshooting.md
+	
+#glossary.md 
 			
 
 TOC = --toc --toc-depth=4
