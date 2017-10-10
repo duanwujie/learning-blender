@@ -269,7 +269,6 @@ The Tool Shelf and Properties region have a shortcut assigned to toggle between 
 #### Position
 
 
-
 To flip a region from one side to the opposite press F5, while the Region is under the mouse pointer.
 
 The header can also be flip by RMB on it and select the appropriate item from the pop-up menu. If the header is at the top, the item text will read “Flip to Bottom”, and if the header is at the bottom the item text will read “Flip to Top”.
@@ -284,7 +283,6 @@ Vertical tabs can be switched with the Wheel within the tab header and Ctrl-Whee
 
 ![Horizontal tab header](images/game-engine_physics_introduction_tab-header.png)
 ![Tool Shelf panels.](images/interface_tabs.png)
-
 
 
 #### Panels
@@ -324,12 +322,9 @@ The zoom factor of a whole region with panels can be changed by Ctrl-MMB clickin
 
 The alignment of the panels in the Properties Editor can be changed between vertical and horizontal. To do this click with RMB somewhere within the main region of the Properties Editor and choose either Horizontal or Vertical from the appearing menu. Keep in mind though that the panels are optimized for vertical alignment.
 
-
-
 ## Interface Controls
 ## Buttons and Controls
 ### Buttons
-
 
 
 #### Operation button.
@@ -339,7 +334,6 @@ These are buttons that perform an operation when clicked with LMB. They can be i
 ![Operation Buttons](images/interface_button.png)
 
 #### Text Fields & Search Fields.
-
 
 
 Text fields have a light gray background and a darker outline. They hold text strings, and provide the means to edit it by standard text editing. Search fields show a magnifying glass icon on the left side. Start typing in the field to search. Only items with matching text will be shown.
@@ -356,18 +350,31 @@ The color button stores a color value shown in its background. LMB color buttons
 ![Color Buttons](images/interface_color_button.png)
 
 
-
-
 ### Menus
 
 Blender uses a variety of different menus for accessing options and tools.
 
 #### Header Menus
 
+Most headers exhibit a set of menus, located immediately next to the first Editor Type selector. Header menus are used to configure the editor and access tools. All Menu entries show the relevant shortcut keys, if any.
+
+![The Info Editor menu buttons.](images/interface_menu_button.png)
+
+
 #### Collapsing Menus
+
+Sometimes it’s helpful to gain some extra horizontal space in the header by collapsing menus, this can be accessed from the header context menu, simply RMB click on the header and enable it to collapse.
+
+![Right-click on any of the header menus](images/interface_header_menu_expand.jpg)
+![Access the menu from the collapsed icon](images/interface_header_menu_collapsed.jpg)
+
+
 
 #### Select Menus
 
+The Select menu or short selector lets you choose between a set of options. They can show a text and/or an icon. The options are shown in a pop-up. The selected option is then shown as active.
+
+![The 3D View mode select menu](images/interface_controls_buttons_menus_select-menu.png)
 
 #### Pop-Up Menus
 
@@ -447,7 +454,60 @@ Single sets or gets the value of the button under the mouse pointer. All on the 
 
 * For UI development – Points at the translation code line.
 
+
+#### Specials Menu
+
+The Specials pop-up menu contains a context-sensitive list of operators. It is opened by a button with a down arrow on dark background![](images/interface_controls_buttons_menus_specials.png) specials-button or with W in most editors giving quick access to tools sensitive to the editors mode. 
+
+#### Pie Menus
+
+A pie menu is a menu whose items are spread radially around the mouse. Pie menus have to be activated in the User Preferences through Add-ons ‣ UI ‣ Pie Menus Official.
+
+![The shade pie menu](images/interface_pie-menu.jpg)
+
+#### Interaction
+
+The pie menu is spawned by a key press, which are listed in the Add-on Preferences.
+
+Releasing the key without moving the mouse will keep the menu open and the user can then move the mouse pointer towards the direction of a pie menu item and select it by clicking. Releasing the key after moving the mouse towards a pie menu item will cause the menu to close and the selected menu item to activate.
+
+An open disc widget at the center of the pie menu shows the current direction of the pie menu. The selected item is also highlighted. A pie menu will only have a valid direction for item selection, if the mouse is touching or extending beyond the disc widget at the center of the menu.
+
+Pie menu items support key accelerators, which are the letters underlined on each menu item. Also number keys can be used to select the items.
+
+If there are sub-pies available, it is indicated by a plus icon.
+
+See Pie menu settings.
+
+
 ### Toggle & Radio Buttons
+
+#### Checkboxes & Toggle Buttons
+
+These buttons are used to activate or deactivate options. Use LMB to change their state.
+
+On checkboxes a tick is shown when the option is activated. Toggle buttons are used to set an on/off status. When state is on, they appear pressed (dark). Clicking this type of button will toggle a state but will not perform any operation. Some toggle buttons have an icon version for each state.
+
+![Toggle Buttons.](images/interface_controls_buttons_toggle-radio_checkbox.png)
+
+#### Dragging
+
+To change many values at once, you can LMB drag over multiple buttons, This works for checkboxes, toggles and to select a radio button value.
+
+For layer buttons (a type of toggle button) it is often useful to hold Shift at the same time, to set or clear many layers at once.
+
+#### Radio Buttons
+
+Radio buttons are used to choose from a small selection of “mutually exclusive” options.	
+
+![Radio Buttons.](images/interface_controls_buttons_toggle-radio_radio.png)
+
+#### Cycling
+
+Use Ctrl-Wheel, while hovering with the mouse over it, to cycle between the options. Cycling works also for number button and select menus.
+
+
+
 ### Number Buttons
 ### Eyedropper
 ## Extended Controls
